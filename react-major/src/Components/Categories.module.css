@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
+* {
+    font-family: 'Solway', serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: auto;
+    min-height: 70vh;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: rgb(43,226,150);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.categoryImg {
+    width: 100%;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.banner-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+}
+
+.title {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.banner, .categoryCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border: 0.2rem solid rgb(80, 221, 162);
+    border-radius: 15px;
+    cursor: pointer;
+    width: 80%;
+    aspect-ratio: 1/1;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.banner:hover, .categoryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(43,226,150,0.3);
+}
+
+.img {
+    width: clamp(3rem, 6vw, 4rem);
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 850px) {
+    .categoryImg {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 1.5rem;
+				width: 500px;
+    }
+    .wrapper{
+        min-height: auto;
+    }
+    .banner, .categoryCard {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .categoryImg {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .h1 {
+        padding: 0.5rem 0;
+    }
+    
+    .banner, .categoryCard {
+        padding: 1rem;
+    }
+}

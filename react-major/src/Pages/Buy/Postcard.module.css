@@ -1,0 +1,32 @@
+.card {
+  max-width: 30rem; /* 384px */
+  margin-bottom: 1rem;
+	margin-inline: auto;
+  background: white;
+  border-radius: 0.6rem; /* 2xl */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size:2rem; /* text-2xl */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  background-color: rgb(13,51,35); /* blue-600 */
+  color: white;
+  border: none;
+  border-radius: 0.4rem; /* xl */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(2, 37, 22); /* blue-700 */
+}

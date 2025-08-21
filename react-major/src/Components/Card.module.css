@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+
+		font-family: 'Solway';
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+		box-sizing: border-box;
+}
+.wish{
+	position: absolute;
+	top: 0.8rem;
+	right: 0.8rem;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 0.3rem;
+	padding: 1rem 1rem 0rem 0rem;
+
+	z-index: 1;
+	border: none;
+}
+.parent{
+	position: relative;
+	width: 300px;
+	height: 390px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #111;
+	border-radius: 1rem;
+}
+.card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 1rem;
+	height: 390px;
+	width: 100%;
+	
+}
+.img{
+	padding: 0rem 0.8rem 0rem 0.8rem;
+	border-radius: 5px;
+	width: 100%;
+  aspect-ratio: 5/3;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-height: 400px; */
+  overflow: hidden;
+
+}
+.img img{
+	border-radius: 5px;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+.info{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.3rem;
+	flex-direction: column;
+	padding: 0rem 1rem;
+}
+.price{
+	font-size: 1.2rem;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.2rem;
+}
+.title{
+	font-size: 1rem;
+	font-weight: 500;
+}
+.Location{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding :0rem 1rem;
+	width: 100%;
+}
+.loc{
+	font-size: 0.8rem;
+	font-weight: 200;
+}
+.date{
+	font-size: 0.8rem;
+	font-weight: 200;
+}
+.btns{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.btn1{
+	text-decoration: none;
+	text-decoration-line: none;
+	padding: 0rem 1rem;
+	width: 100%;
+	background-color: rgb(17 70 48);
+	font-family:'Montserrat', 'san-serif' ;
+	font-size: 1rem;
+	padding: 1rem 2rem 1rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 0.5rem;
+	color: white;
+	cursor: pointer;
+}
+
+.btn2{
+	width: 100%;
+	background-color: #111;
+	font-family:'Montserrat', 'san-serif' ;
+	font-size: 1rem;
+	padding: 1rem 2rem 1rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border: 1px solid rgb(43, 226, 150);
+	border-radius: 0.5rem;
+	color: white;
+	cursor: pointer;
+	transition: all linear 0.1s
+}
+.btn2:hover {
+	background: rgb(17 70 48);
+	border: none;
+}

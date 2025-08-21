@@ -1,0 +1,210 @@
+.categoriesManagement {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categoriesManagement h1 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.dark .categoriesManagement h1 {
+  color: #f0f0f0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.categoryCard {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.dark .categoryCard {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.categoryIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.categoryInfo h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.dark .categoryInfo h3 {
+  color: #f0f0f0;
+}
+
+.categoryCount {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.dark .categoryCount {
+  color: #aaa;
+}
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .chartsRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chartCard {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.dark .chartCard {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chartCard h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dark .chartCard h3 {
+  color: #f0f0f0;
+}
+
+.pieChart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  background: conic-gradient(
+    #4CAF50 0% 15%,
+    #2196F3 15% 30%,
+    #FF9800 30% 42%,
+    #9C27B0 42% 52%,
+    #F44336 52% 61%,
+    #795548 61% 69%,
+    #E91E63 69% 76%,
+    #00BCD4 76% 100%
+  );
+}
+
+.pieCenter {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #f5f7fa;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+}
+
+.dark .pieCenter {
+  background: #1e1e1e;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.legend > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.legendColor {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.barChartContainer {
+  display: flex;
+  height: 250px;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+.barChartItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.barLabel {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.dark .barLabel {
+  color: #aaa;
+}
+
+.barTrack {
+  width: 30px;
+  height: 100%;
+  background: #f0f0f0;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dark .barTrack {
+  background: #2d2d2d;
+}
+
+.barFill {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  transition: height 1s ease;
+}
+
+.barValue {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.dark .barValue {
+  color: #f0f0f0;
+}

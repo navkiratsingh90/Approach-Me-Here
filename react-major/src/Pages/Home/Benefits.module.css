@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    font-family: 'Montserrat', 'san-serif';
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+		box-sizing: border-box;
+}
+
+.wrapper{
+
+	width: 100vw;
+	min-height: 70vh;
+	gap: 4rem;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.heading{
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.parent-card{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+}
+.card{
+	padding: 1rem 0rem;
+	background-color: #101010;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 0.5rem;
+	/* border-top-left-radius: 40% ;
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem; */
+	gap: 1rem;
+	/* box-shadow: 0px 2px 20px 10px black; */
+}
+
+.img{
+	
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img img{
+	border-radius: 1rem;
+	width: 13rem;
+}
+
+.para{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 0rem 1rem;
+	text-align: center;
+}
+
+.h2{
+	color: rgb(43, 226, 150);
+}
+.p{
+	font-size: 0.9rem;
+}

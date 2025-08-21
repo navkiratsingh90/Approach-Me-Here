@@ -1,0 +1,38 @@
+export const carBrandsInIndia = [
+	"Maruti Suzuki",
+	"Tata Motors",
+	"Mahindra",
+	"Hyundai",
+	"Kia",
+	"Toyota",
+	"Honda",
+	"Skoda",
+	"Volkswagen",
+	"Renault",
+	"Nissan",
+	"MG Motor",
+	"Citroen",
+	"Jeep",
+	"BMW",
+	"Audi",
+	"Mercedes-Benz",
+	"Mini",
+	"Land Rover",
+	"Jaguar",
+	"Lexus",
+	"Porsche",
+	"Volvo",
+	"Lamborghini",
+	"Ferrari",
+	"Rolls-Royce",
+	"Aston Martin",
+	"McLaren",
+	"Bentley",
+	"Vayve Mobility",
+	"Bajaj",
+	"Hindustan Motors"
+];
+export const Brand = carBrandsInIndia.map(name => ({
+	brandName: name,
+	checked: false
+}));

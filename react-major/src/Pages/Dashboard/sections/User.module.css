@@ -1,0 +1,240 @@
+.userManagement {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.dark .header h1 {
+  color: #f0f0f0;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchContainer input {
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.darkInput {
+  background-color: #2d2d2d;
+  border-color: #444 !important;
+  color: #f0f0f0;
+}
+
+.searchContainer input:focus {
+  outline: none;
+  border-color: rgb(43, 226, 150);
+  box-shadow: 0 0 0 2px rgba(43, 226, 150, 0.2);
+}
+
+.searchButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.addButton {
+  background: rgb(43, 226, 150);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.addButton:hover {
+  background: rgb(33, 206, 140);
+}
+
+.tableContainer {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.dark .tableContainer {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.userTable th {
+  background-color: #f8f9fa;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.dark .userTable th {
+  background-color: #252525;
+  color: #ccc;
+  border-bottom: 1px solid #333;
+}
+
+.userTable td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.dark .userTable td {
+  color: #ccc;
+  border-bottom: 1px solid #333;
+}
+
+.userTable tr:last-child td {
+  border-bottom: none;
+}
+
+.userTable tr:hover td {
+  background-color: #f9f9f9;
+}
+
+.dark .userTable tr:hover td {
+  background-color: #252525;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgb(43, 226, 150);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+.status.suspended {
+  background: rgba(255, 152, 0, 0.2);
+  color: #FF9800;
+}
+
+.status.pending {
+  background: rgba(33, 150, 243, 0.2);
+  color: #2196F3;
+}
+
+.status.inactive {
+  background: rgba(158, 158, 158, 0.2);
+  color: #9E9E9E;
+}
+
+.actionButton {
+  padding: 6px 12px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  margin-right: 5px;
+}
+
+.dark .actionButton {
+  background: #333;
+  border-color: #444;
+  color: #ccc;
+}
+
+.actionButton:hover {
+  background: #eee;
+}
+
+.dark .actionButton:hover {
+  background: #3a3a3a;
+}
+
+.actionButton.delete {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  border-color: rgba(244, 67, 54, 0.2);
+}
+
+.actionButton.delete:hover {
+  background: rgba(244, 67, 54, 0.2);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .controls {
+    width: 100%;
+  }
+  
+  .searchContainer {
+    flex: 1;
+  }
+  
+  .searchContainer input {
+    width: 100%;
+  }
+  
+  .userTable {
+    display: block;
+    overflow-x: auto;
+  }
+}

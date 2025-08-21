@@ -1,0 +1,54 @@
+.container {
+  min-height: 100vh;
+  color: #fff;
+  padding: 4rem 1rem;
+}
+
+.content {
+  max-width: 90vw;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  color: #00ff99;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.list {
+  text-align: left;
+  margin: 1rem 0 2rem;
+  padding-left: 1.5rem;
+}
+
+.list li {
+  margin-bottom: 0.75rem;
+}
+
+.finalLine {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}

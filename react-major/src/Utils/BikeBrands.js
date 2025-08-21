@@ -1,0 +1,42 @@
+export const bikeBrands = [
+  "Hero",
+  "Honda",
+  "TVS",
+  "Bajaj",
+  "Yamaha",
+  "Royal Enfield",
+  "KTM",
+  "Suzuki",
+  "Mahindra",
+  "Harley-Davidson",
+  "Ducati",
+  "Kawasaki",
+  "BMW Motorrad",
+  "Aprilia",
+  "Benelli",
+  "Triumph",
+  "MV Agusta",
+  "CFMoto",
+  "Indian Motorcycle",
+  "Moto Guzzi",
+  "Norton",
+  "BSA",
+  "Zero Motorcycles",
+  "LML",
+  "Jawa",
+  "Zontes",
+  "Vespa",
+  "Keeway",
+  "Husqvarna",
+  "Ultraviolette",
+  "Ather Energy",
+  "Revolt",
+  "Ola Electric",
+  "Oben",
+  "Tork Motors"
+];
+
+export const Brand = bikeBrands.map(name => ({
+	brandName: name,
+	checked: false
+}));

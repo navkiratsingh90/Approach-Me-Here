@@ -1,0 +1,35 @@
+export const ElectronicBrands = [
+		"Apple",
+    "Samsung",
+    "LG",
+    "OnePlus",
+    "Xiaomi",
+    "Realme",
+    "Motorola",
+    "Asus",
+    "Nokia",
+		"Dell",
+    "HP",
+    "Lenovo",
+    "Asus",
+    "Acer",
+    "MSI",
+    "Canon",
+		"Whirlpool",
+    "Bosch",
+    "LG",
+    "Samsung",
+    "IFB",
+    "Panasonic",
+    "Philips",
+    "Haier",
+    "Voltas",
+    "Blue Star",
+		"Bosch",
+    "Sony",
+]
+
+export const Brand = ElectronicBrands.map(name => ({
+	brandName: name,
+	checked: false
+}));

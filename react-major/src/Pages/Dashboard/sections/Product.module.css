@@ -1,0 +1,254 @@
+.productManagement {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.textBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.para{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  font-size: 1.5rem;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.btns button{
+  background: none;
+  border: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.dark .header h1 {
+  color: #f0f0f0;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  display: flex;
+  gap: 8px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.dark .filterGroup {
+  background: #2d2d2d;
+}
+
+.filterButton {
+  padding: 8px 15px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.dark .filterButton {
+  color: #ccc;
+}
+
+.filterButton.active {
+  background: white;
+  color: rgb(43, 226, 150);
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.dark .filterButton.active {
+  background: #3a3a3a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.addButton {
+  background: rgb(43, 226, 150);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.addButton:hover {
+  background: rgb(33, 206, 140);
+}
+
+.tableContainer {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.dark .tableContainer {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productTable th {
+  background-color: #f8f9fa;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.dark .productTable th {
+  background-color: #252525;
+  color: #ccc;
+  border-bottom: 1px solid #333;
+}
+
+.productTable td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.dark .productTable td {
+  color: #ccc;
+  border-bottom: 1px solid #333;
+}
+
+.productTable tr:last-child td {
+  border-bottom: none;
+}
+
+.productTable tr:hover td {
+  background-color: #f9f9f9;
+}
+
+.dark .productTable tr:hover td {
+  background-color: #252525;
+}
+
+.productTitle {
+  font-weight: 500;
+  color: #333;
+}
+
+.dark .productTitle {
+  color: #f0f0f0;
+}
+
+.productDesc {
+  color: #777;
+  max-width: 300px;
+}
+
+.dark .productDesc {
+  color: #aaa;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+.status.draft {
+  background: rgba(33, 150, 243, 0.2);
+  color: #2196F3;
+}
+
+.status.archived {
+  background: rgba(158, 158, 158, 0.2);
+  color: #9E9E9E;
+}
+
+.actionButton {
+  padding: 6px 12px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  margin-right: 5px;
+}
+
+.dark .actionButton {
+  background: #333;
+  border-color: #444;
+  color: #ccc;
+}
+
+.actionButton:hover {
+  background: #eee;
+}
+
+.dark .actionButton:hover {
+  background: #3a3a3a;
+}
+
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .controls {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .filterGroup {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .productTable {
+    display: block;
+    overflow-x: auto;
+  }
+}

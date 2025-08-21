@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Solway:wght@300;400;500;700;800&display=swap');
+
+
+*{
+    font-family: 'Solway', 'san-serif';
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+		box-sizing: border-box;
+}
+
+.wrapper{
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;
+}
+.parent{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 2rem;
+	gap: 2rem;
+}
+.head{
+	color: rgb(43,250,143);
+	font-family: 'Solway';
+}
+.heading{
+	font-family: 'Solway';
+	padding: 0rem 1rem 2rem 1rem;
+	width: 100%;
+	font-size: 3rem;
+	font-weight: 700;
+	border-bottom: 2px solid white;
+}
+
+.products{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 2.5rem;
+	flex-wrap: wrap;
+}

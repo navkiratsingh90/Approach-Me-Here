@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+
+		font-family: 'Solway';
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+		box-sizing: border-box;
+}
+
+.wrapper{
+	width: 100vw;
+	min-height: 60vh;
+	height: auto;
+	margin: 2rem 0rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 4rem;
+}
+.parent{
+	width: 70vw;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.card{
+	background-color: #111;
+	border-radius: 1rem;
+	border: none;
+	height: 300px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	cursor: pointer;
+}
+.heading{
+	font-size: 3rem;
+	font-weight: 700;
+}
+.img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 245px;
+}
+.img img{
+	border-radius: 1rem;
+	width: 203px;
+}
+.head{
+	border-radius: 1rem;
+	font-size: 2rem;
+	font-weight: 500;
+	text-decoration: none;
+}
